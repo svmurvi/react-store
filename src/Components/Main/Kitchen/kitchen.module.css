@@ -1,0 +1,102 @@
+.kitchen {
+    margin: 5% 0 0 0;
+    width: 100%;
+    height: 600px;
+    background: url(../../../assets/img/kitchen.png) center center no-repeat;
+    background-size: cover;
+}
+.hidden_desc {
+    width: 100%;
+    height: 25%;
+    background: url(../../../assets/img/hiddenDesc.png) center center no-repeat;
+    background-size: cover;
+    opacity: 0;
+}
+.hidden_desc_text {
+    padding: 5% 25% 0 25%;
+    width: 50%;
+    height: 20%;
+    text-align: center;
+    font-family: Montserrat-Italic;
+    font-style: normal;
+    font-size: 16px;
+    color: white;
+}
+.kitchen:hover > .hidden_desc {
+    opacity: 1;
+    transition: 0.5s linear;
+}
+@media screen and (max-width: 1000px) {
+    .kitchen {
+        margin: 5% 0 0 0;
+        width: 100%;
+        height: 500px;
+        background: url(../../../assets/img/kitchen.png) center center no-repeat;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 750px) {
+    .kitchen {
+        margin: 5% 0 0 0;
+        width: 100%;
+        height: 400px;
+        background: url(../../../assets/img/kitchen.png) center center no-repeat;
+        background-size: cover;
+    }
+    .hidden_desc_text {
+        padding: 3% 25% 0 25%;
+        width: 50%;
+        height: 20%;
+        text-align: center;
+        font-family: Montserrat-Italic;
+        font-style: normal;
+        font-size: 16px;
+        color: white;
+    }
+}
+@media screen and (max-width: 550px) {
+    .kitchen {
+        margin: 5% 0 0 0;
+        width: 100%;
+        height: 300px;
+        background: url(../../../assets/img/kitchen.png) center center no-repeat;
+        background-size: cover;
+    }
+    .hidden_desc {
+        width: 100%;
+        height: 35%;
+        background: url(../../../assets/img/hiddenDesc.png) center center no-repeat;
+        background-size: cover;
+        opacity: 0;
+    }
+    .hidden_desc_text {
+        padding: 5% 25% 0 25%;
+        width: 50%;
+        height: 20%;
+        text-align: center;
+        font-family: Montserrat-Italic;
+        font-style: normal;
+        font-size: 16px;
+        color: white;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .hidden_desc {
+        width: 100%;
+        height: 30%;
+        background: url(../../../assets/img/hiddenDesc.png) center center no-repeat;
+        background-size: cover;
+        opacity: 0;
+    }
+    .hidden_desc_text {
+        padding: 4% 5% 0 5%;
+        width: 90%;
+        height: 20%;
+        text-align: center;
+        font-family: Montserrat-Italic;
+        font-style: normal;
+        font-size: 16px;
+        color: white;
+    }
+}

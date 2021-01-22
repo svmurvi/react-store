@@ -1,0 +1,104 @@
+.title_li {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 14.28%;
+    height: 100%;
+    transition: 1s;
+}
+a {
+    color: rgba(255, 255, 255, 0.411);
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Montserrat-Italic;
+    cursor: pointer;
+}
+.underline::after {
+    background-color: grey;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+}
+.underline:hover:after {
+    width: 100%;
+}
+.shopping_cart_dropdown {
+    position: absolute;
+    left: 0;
+    display: none;
+    margin: 0 5% 0 5%;
+    padding: 0 0 5% 0;
+    text-align: left;
+    list-style: none;
+    background: white;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    width: 85%;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+.shopping_cart_dropdown h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat-Italic;
+}
+.shopping_cart:hover > .shopping_cart_dropdown {
+    display: flex;
+    flex-direction: column;
+}
+.shopping_cart_dropdown_item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 15% 0 15%;
+    font-family: Montserrat-Italic;
+}
+.shopping_cart_dropdown_item img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 320px;
+    max-height: 180px;
+    padding: 5%;
+}
+@media screen and (max-width: 1000px) {
+    .title_li {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 14.28%;
+        height: 100%;
+        transition: 1s;
+    }
+}
+@media screen and (max-width: 860px) {
+    .title_li {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 50%;
+        margin: auto;
+        transition: 1s;
+    }
+}
+@media screen and (max-width: 630px) {
+    .title_li {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center; 
+        width: 50%;
+        height: 25%;
+        margin: 0;
+        transition: 1s;
+    }
+}
